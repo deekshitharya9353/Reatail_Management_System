@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Retail Management System</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <div class="sidebar">
+
+        <h2>RMS</h2>
+
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="customers.html">Customers</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="reports.html">Reports</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+
+    </div>
+
+    <div class="main-content">
+
+        <header>
+            <h1>Dashboard</h1>
+            <p>Welcome to Retail Management System</p>
+        </header>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total Customers</h3>
+                <p id="customersCount">120</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Orders</h3>
+                <p id="ordersCount">450</p>
+            </div>
+
+            <div class="card">
+                <h3>Orders Today</h3>
+                <p id="todayOrders">15</p>
+            </div>
+
+            <div class="card">
+                <h3>Pending Orders</h3>
+                <p id="pendingOrders">20</p>
+            </div>
+
+        </div>
+
+        <div class="recent-orders">
+
+            <h2>Recent Orders</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Product</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Rahul</td>
+                        <td>Laptop</td>
+                        <td>11-06-2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>102</td>
+                        <td>Anjali</td>
+                        <td>Mobile</td>
+                        <td>11-06-2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>103</td>
+                        <td>Kiran</td>
+                        <td>Keyboard</td>
+                        <td>10-06-2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>104</td>
+                        <td>Priya</td>
+                        <td>Monitor</td>
+                        <td>10-06-2026</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

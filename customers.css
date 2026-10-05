@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    display:flex;
+    background:#f4f6f9;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:220px;
+    height:100vh;
+    background:#1f4e79;
+    color:white;
+    position:fixed;
+}
+
+.sidebar h2{
+    text-align:center;
+    padding:20px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    padding:15px;
+}
+
+.sidebar ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+.sidebar ul li:hover{
+    background:#163b5c;
+}
+
+/* Main Content */
+
+.main-content{
+    margin-left:220px;
+    width:100%;
+    padding:25px;
+}
+
+.main-content h1{
+    margin-bottom:20px;
+    color:#1f4e79;
+}
+
+.customer-form{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.customer-form input{
+    padding:10px;
+    flex:1;
+}
+
+.customer-form button{
+    padding:10px 20px;
+    background:#1f4e79;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+.search-box{
+    margin-bottom:20px;
+}
+
+.search-box input{
+    width:300px;
+    padding:10px;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+th{
+    background:#1f4e79;
+    color:white;
+    padding:12px;
+}
+
+td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
+
+.delete-btn{
+    background:red;
+    color:white;
+    border:none;
+    padding:6px 10px;
+    cursor:pointer;
+}

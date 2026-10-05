@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Management</title>
+
+<link rel="stylesheet" href="customers.css">
+</head>
+<body>
+
+<div class="sidebar">
+
+    <h2>RMS</h2>
+
+    <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="login.html">Logout</a></li>
+    </ul>
+
+</div>
+
+<div class="main-content">
+
+    <h1>Customer Management</h1>
+
+    <div class="customer-form">
+
+        <input type="text" id="customerName"
+        placeholder="Customer Name">
+
+        <input type="text" id="customerPhone"
+        placeholder="Phone Number">
+
+        <input type="email" id="customerEmail"
+        placeholder="Email">
+
+        <button onclick="addCustomer()">
+            Add Customer
+        </button>
+
+    </div>
+
+    <div class="search-box">
+
+        <input type="text"
+        id="searchInput"
+        placeholder="Search Customer..."
+        onkeyup="searchCustomer()">
+
+    </div>
+
+    <table id="customerTable">
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="customerBody">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="customers.js"></script>
+
+</body>
+</html>

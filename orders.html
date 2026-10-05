@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Management</title>
+
+<link rel="stylesheet" href="orders.css">
+</head>
+<body>
+
+<div class="sidebar">
+
+    <h2>RMS</h2>
+
+    <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="login.html">Logout</a></li>
+    </ul>
+
+</div>
+
+<div class="main-content">
+
+    <h1>Order Management</h1>
+
+    <div class="order-form">
+
+        <input type="text"
+        id="customerName"
+        placeholder="Customer Name">
+
+        <input type="text"
+        id="productName"
+        placeholder="Product Name">
+
+        <input type="number"
+        id="quantity"
+        placeholder="Quantity">
+
+        <input type="date"
+        id="orderDate">
+
+        <button onclick="addOrder()">
+            Add Order
+        </button>
+
+    </div>
+
+    <div class="filters">
+
+        <input type="text"
+        id="searchCustomer"
+        placeholder="Search Customer"
+        onkeyup="searchOrder()">
+
+        <input type="date"
+        id="filterDate"
+        onchange="filterByDate()">
+
+    </div>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="orderBody">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="orders.js"></script>
+
+</body>
+</html>
